@@ -167,7 +167,7 @@ class TypeWithoutFormatter<T, kConvertibleToInteger> {
   // given that it has no user-defined printer.
   static void PrintValue(const T& value, ::std::ostream* os) {
     const internal::BiggestInt kBigInt = value;
-    *os << kBigInt;
+    *os << value;
   }
 };
 
